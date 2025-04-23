@@ -116,7 +116,7 @@ class ControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.email", is("test@example.com")))
-                .andExpect(jsonPath("$.message", is("kayıt başarılı bir şekilde gerçekleşti.")));
+                .andExpect(jsonPath("$.message", is("Member registered successfully.")));
     }
 
     @Test
